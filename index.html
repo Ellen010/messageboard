@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>MyMails - By Jojo</title>
+	</head>
+	<body>
+		<div id="container">
+			<header id="header">
+				<div id="logo-container">
+					<img class="logo" src="images/logomymails.png" />
+					<h1 class="logo-text">MY<span class="white">MAILS</span></h1>
+				</div>
+				<div id="search-container">
+					<input id="search-message" type="text" placeholder=" 🔎 Search message..." />
+					<button type="button" id="btn-search">Search</button>
+				</div>
+			</header>
+			<main id="main">
+				<div id="left-pane">
+					<div id="add-section">
+						<input id="add-message" type="text" placeholder="New message..." />
+						<button type="button" id="btn-add">Add</button>
+				<div id="right-pane">
+					<div id="total-msg">
+						<p>Nombre de messages : <span id="count">5</span></p>
+					</div>
+
+					<div id="msg-container">
+						<div class="row">
+							<img class="avatar" src="images/avatar-1.jpg" />
+							<div class="text-container">
+								<h6>Marry Ann</h6>
+								<p>
+									At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
+									dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+									animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+								</p>
+							</div>
+							<span class="delete">✖</span>
+						</div>
+						<div class="row">
+							<img class="avatar" src="images/avatar-2.jpg" />
+							<div class="text-container">
+								<h6>Jay Lo</h6>
+								<p>
+									At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
+									dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+									animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+								</p>
+							</div>
+							<span class="delete">✖</span>
+						</div>
+						<div class="row">
+							<img class="avatar" src="images/avatar-3.jpg" />
+							<div class="text-container">
+								<h6>Jay Z</h6>
+								<p>
+									At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
+									dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+									animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+								</p>
+							</div>
+							<span class="delete">✖</span>
+						</div>
+						<div class="row">
+							<img class="avatar" src="images/avatar-4.jpg" />
+							<div class="text-container">
+								<h6>Tiesto</h6>
+								<p>
+									At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
+									dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+									animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+								</p>
+							</div>
+							<span class="delete">✖</span>
+						</div>
+						<div class="row">
+							<img class="avatar" src="images/avatar-5.jpg" />
+							<div class="text-container">
+								<h6>Luke Combs</h6>
+								<p>
+									At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
+									dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+									animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+								</p>
+							</div>
+							<span class="delete">✖</span>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer id="footer">
+				<p>Made with ❤️ @ La Capsule</p>
+			</footer>
+		</div>
+    <script>const msgContainer = document.getElementById('msg-container');
+      const totalMessages = msgContainer.querySelectorAll('.row').length;
+      document.getElementById('count').textContent = totalMessages;</script>
+   <script src="script.js"></script>	
+</body>
+</html>
